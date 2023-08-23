@@ -445,17 +445,17 @@ if (true) {
       document.getElementById("ai-tag").innerHTML = "Tianli GPT";
 
       const truncateDescription = ("" + "Quick Start, Create a new post, Run server, Generate static files, Deploy to remote sites").trim().substring(0, 1000);
-      let value = Math.floor(Math.random() * 1) + 1000;
+      let value = Math.floor(Math.random() * 2) + 1000;
       while (value === prevParam || truncateDescription.length - value === prevParam) {
-        value = Math.floor(Math.random() * 1) + 1000;
+        value = Math.floor(Math.random() * 2) + 1000;
       }
       aiTitleRefreshIcon.style.opacity = "0.2";
       aiTitleRefreshIcon.style.transitionDuration = "0.3s";
       aiTitleRefreshIcon.style.transform = "rotate(" + 360 * refreshNum + "deg)";
       if (truncateDescription.length <= 1000) {
-        let param = truncateDescription.length - Math.floor(Math.random() * 1);
+        let param = truncateDescription.length - Math.floor(Math.random() * 2);
         while (param === prevParam) {
-          param = truncateDescription.length - Math.floor(Math.random() * 1);
+          param = truncateDescription.length - Math.floor(Math.random() * 2);
         }
         aiAbstract(param);
         prevParam = param;
@@ -482,17 +482,17 @@ if (true) {
 
   aiTitleRefreshIcon.addEventListener("click", () => {
     const truncateDescription = ("" + "Quick Start, Create a new post, Run server, Generate static files, Deploy to remote sites").trim().substring(0, 1000);
-    let value = Math.floor(Math.random() * 1) + 1000;
+    let value = Math.floor(Math.random() * 2) + 1000;
     while (value === prevParam || truncateDescription.length - value === prevParam) {
-      value = Math.floor(Math.random() * 1) + 1000;
+      value = Math.floor(Math.random() * 2) + 1000;
     }
     aiTitleRefreshIcon.style.opacity = "0.2";
     aiTitleRefreshIcon.style.transitionDuration = "0.3s";
     aiTitleRefreshIcon.style.transform = "rotate(" + 360 * refreshNum + "deg)";
     if (truncateDescription.length <= 1000) {
-      let param = truncateDescription.length - Math.floor(Math.random() * 1);
+      let param = truncateDescription.length - Math.floor(Math.random() * 2);
       while (param === prevParam) {
-        param = truncateDescription.length - Math.floor(Math.random() * 1);
+        param = truncateDescription.length - Math.floor(Math.random() * 2);
       }
       aiAbstract(param);
       prevParam = param;
