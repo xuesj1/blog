@@ -103,7 +103,7 @@
 
   <url>
     <loc>https://blog.xuesj.top/</loc>
-    <lastmod>2023-08-26</lastmod>
+    <lastmod>2023-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -111,35 +111,35 @@
   
   <url>
     <loc>https://blog.xuesj.top/tags/test/</loc>
-    <lastmod>2023-08-26</lastmod>
+    <lastmod>2023-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xuesj.top/tags/c/</loc>
-    <lastmod>2023-08-26</lastmod>
+    <lastmod>2023-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xuesj.top/tags/oi/</loc>
-    <lastmod>2023-08-26</lastmod>
+    <lastmod>2023-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xuesj.top/tags/%E5%81%9A%E9%A2%98%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-08-26</lastmod>
+    <lastmod>2023-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xuesj.top/tags/%E5%B9%BF%E6%90%9C%EF%BC%88BFS%EF%BC%89/</loc>
-    <lastmod>2023-08-26</lastmod>
+    <lastmod>2023-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -148,14 +148,14 @@
   
   <url>
     <loc>https://blog.xuesj.top/categories/%E5%82%A8%E7%89%A9%E9%97%B4/</loc>
-    <lastmod>2023-08-26</lastmod>
+    <lastmod>2023-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xuesj.top/categories/%E5%81%9A%E9%A2%98%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-08-26</lastmod>
+    <lastmod>2023-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
