@@ -25,12 +25,14 @@
 <meta property="og:site_name" content="xuesj&#39;blog">
 <meta property="og:description" content="翻转与反转题目传送门洛谷P9741 翻转与反转 题目分析数据范围是$1\le n \le 2\times 10^6$ ，首先想到的是将如题的两个操作——翻转和反转模拟求解，但是会超时，于是有了第二种方法，规律通过每个数下标位置的变化和反转变化可得。 算法一分析看了数据范围就是到，$O(n^2)$的算法肯定会超时，奈何本人太菜，先写一个吧。首先用序列 $[1,1,1]$（样例1） 举个例子    操">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jsd.cdn.zzko.cn/gh/xuesj1/picx-images-hosting@master/wallhaven-3lrw69.2qf8s3sl42u0.webp">
 <meta property="article:published_time" content="2023-10-27T13:59:36.000Z">
-<meta property="article:modified_time" content="2023-12-19T15:36:16.000Z">
+<meta property="article:modified_time" content="2024-07-21T10:26:41.675Z">
 <meta property="article:author" content="xuesj">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="规律">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://jsd.cdn.zzko.cn/gh/xuesj1/picx-images-hosting@master/wallhaven-3lrw69.2qf8s3sl42u0.webp">
   
   
   
@@ -194,7 +196,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('https://jsd.cdn.zzko.cn/gh/xuesj1/picx-images-hosting@master/wallhaven-3lrw69.2qf8s3sl42u0.webp') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -479,6 +481,12 @@
   
 
 
+  
+  
+
+
+
+
 
 
 
@@ -670,6 +678,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
