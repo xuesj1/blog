@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
+<html lang="zh-CN" data-default-color-scheme=dark>
 
 
 
@@ -26,6 +26,8 @@
 <meta property="article:author" content="xuesj">
 <meta name="twitter:card" content="summary_large_image">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>xuesj&#39;blog</title>
@@ -73,7 +75,119 @@
 
 
   
-<meta name="generator" content="Hexo 7.3.0"></head>
+<!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -159,6 +273,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -240,7 +366,7 @@
       
       <a class="index-excerpt " href="/posts/ada942e/" target="_self">
         <div>
-          翻转与反转题目传送门洛谷P9741 翻转与反转 题目分析数据范围是$1\le n \le 2\times 10^6$ ，首先想到的是将如题的两个操作——翻转和反转模拟求解，但是会超时，于是有了第二种方法，规律通过每个数下标位置的变化和反转变化可得。 算法一分析看了数据范围就是到，$O(n^2)$的算法肯定会超时，奈何本人太菜，先写一个吧。首先用序列 $[1,1,1]$（样例1） 举个例子    操
+          翻转与反转 题目传送门 洛谷P9741 翻转与反转 题目分析 数据范围是 ，首先想到的是将如题的两个操作——翻转和反转模拟求解，但是会超时，于是有了第二种方法，规律通过每个数下标位置的变化和反转变化可得。 算法一 分析 看了数据范围就是到，的算法肯定会超时，奈何本人太菜，先写一个吧。首先用序列 （样例1） 举个例子    操作次数 序列的变化     1
         </div>
       </a>
 
@@ -309,7 +435,7 @@
       
       <a class="index-excerpt " href="/posts/e235da90/" target="_self">
         <div>
-          Catch That Cow题目传送门洛谷P1588 Catch That Cow 题目大意（乱搞awa）在数轴上有一动点x和一定点y，点x每秒前进一个单位长度或后退一个单位长度或移动到当前位置坐标*2的点，问点x到点y最短要几秒 题目分析很容易看出这是一道广搜（BFS）题（其实我没看出来qwq，我太蒻了）。在这道题目中一个点可以通过三种方式(如题)移动，也就是一个点（$x$）只能扩展到三个点，即
+          Catch That Cow 题目传送门 洛谷P1588 Catch That Cow 题目大意（乱搞awa） 在数轴上有一动点x和一定点y，点x每秒前进一个单位长度或后退一个单位长度或移动到当前位置坐标*2的点，问点x到点y最短要几秒 题目分析 很容易看出这是一道广搜（BFS）题（其实我没看出来qwq，我太蒻了）。在这道题目中一个点可以通过三种方式(如题)移动，也就是一个点（）只能
         </div>
       </a>
 
