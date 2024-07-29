@@ -19,16 +19,16 @@
   <meta name="author" content="xuesj">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Catch That Cow 题目传送门 洛谷P1588 Catch That Cow 题目大意（乱搞awa） 在数轴上有一动点x和一定点y，点x每秒前进一个单位长度或后退一个单位长度或移动到当前位置坐标*2的点，问点x到点y最短要几秒 题目分析 很容易看出这是一道广搜（BFS）题（其实我没看出来qwq，我太蒻了）。在这道题目中一个点可以通过三种方式(如题)移动，也就是一个点（）只能">
+    <meta name="description" content="题目传送门 洛谷P1588 Catch That Cow 题目大意（乱搞awa） 在数轴上有一动点x和一定点y，点x每秒前进一个单位长度或后退一个单位长度或移动到当前位置坐标*2的点，问点x到点y最短要几秒 题目分析 很容易看出这是一道广搜（BFS）题（其实我没看出来qwq，我太蒻了）。在这道题目中一个点可以通过三种方式(如题)移动，也就是一个点（）只能扩展到三个点，即,，这三个点。所">
 <meta property="og:type" content="article">
-<meta property="og:title" content="洛谷P1588 Catch That Cow 做题笔记">
+<meta property="og:title" content="洛谷P1588 Catch That Cow 题解">
 <meta property="og:url" content="https://blog.xuesj.top/posts/e235da90/index.html">
 <meta property="og:site_name" content="xuesj&#39;blog">
-<meta property="og:description" content="Catch That Cow 题目传送门 洛谷P1588 Catch That Cow 题目大意（乱搞awa） 在数轴上有一动点x和一定点y，点x每秒前进一个单位长度或后退一个单位长度或移动到当前位置坐标*2的点，问点x到点y最短要几秒 题目分析 很容易看出这是一道广搜（BFS）题（其实我没看出来qwq，我太蒻了）。在这道题目中一个点可以通过三种方式(如题)移动，也就是一个点（）只能">
+<meta property="og:description" content="题目传送门 洛谷P1588 Catch That Cow 题目大意（乱搞awa） 在数轴上有一动点x和一定点y，点x每秒前进一个单位长度或后退一个单位长度或移动到当前位置坐标*2的点，问点x到点y最短要几秒 题目分析 很容易看出这是一道广搜（BFS）题（其实我没看出来qwq，我太蒻了）。在这道题目中一个点可以通过三种方式(如题)移动，也就是一个点（）只能扩展到三个点，即,，这三个点。所">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://jsd.cdn.zzko.cn/gh/xuesj1/picx-images-hosting@master/wallhaven-9mjoy1.3dlbyudl4so0.webp">
 <meta property="article:published_time" content="2023-08-26T12:25:43.000Z">
-<meta property="article:modified_time" content="2024-07-21T10:24:23.693Z">
+<meta property="article:modified_time" content="2024-07-29T09:21:48.812Z">
 <meta property="article:author" content="xuesj">
 <meta property="article:tag" content="广搜（BFS）">
 <meta name="twitter:card" content="summary_large_image">
@@ -38,7 +38,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>洛谷P1588 Catch That Cow 做题笔记 - xuesj&#39;blog</title>
+  <title>洛谷P1588 Catch That Cow 题解 - xuesj&#39;blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -327,7 +327,7 @@ mjx-container[display="true"] + br {
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="洛谷P1588 Catch That Cow 做题笔记"></span>
+            <span id="subtitle" data-typed-text="洛谷P1588 Catch That Cow 题解"></span>
           
         </div>
 
@@ -406,12 +406,12 @@ mjx-container[display="true"] + br {
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">洛谷P1588 Catch That Cow 做题笔记</h1>
+            <h1 id="seo-header">洛谷P1588 Catch That Cow 题解</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2024年7月21日 晚上
+                    本文最后更新于 2024年7月29日 下午
                   
                 
               </p>
@@ -419,8 +419,7 @@ mjx-container[display="true"] + br {
             
               <div class="markdown-body">
                 
-                <h1 id="catch-that-cow">Catch That Cow</h1>
-<h2 id="题目传送门">题目传送门</h2>
+                <h2 id="题目传送门">题目传送门</h2>
 <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1588">洛谷P1588 Catch That
 Cow</a></p>
 <h2 id="题目大意乱搞awa">题目大意（乱搞awa）</h2>
@@ -463,7 +462,7 @@ Cow</a></p>
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%81%9A%E9%A2%98%E7%AC%94%E8%AE%B0/" class="category-chain-item">做题笔记</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -490,7 +489,7 @@ Cow</a></p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>洛谷P1588 Catch That Cow 做题笔记</div>
+      <div>洛谷P1588 Catch That Cow 题解</div>
       <div>https://blog.xuesj.top/posts/e235da90/</div>
     </div>
     <div class="license-meta">
@@ -509,7 +508,7 @@ Cow</a></p>
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2024年7月21日</div>
+          <div>2024年7月29日</div>
         </div>
       
       
@@ -540,9 +539,9 @@ Cow</a></p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/ada942e/" title="洛谷P9741 翻转与反转 做题笔记">
+                      <a href="/posts/ada942e/" title="洛谷P9741 翻转与反转 题解">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">洛谷P9741 翻转与反转 做题笔记</span>
+                        <span class="hidden-mobile">洛谷P9741 翻转与反转 题解</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
